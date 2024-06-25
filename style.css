@@ -24,36 +24,52 @@ body::-webkit-scrollbar{
     text-align: center;
     color: red;
     display: none;
+    margin-top: 10px;
+    font-size: 15px;
 }
 
-.input {
-    width: 70%;
+.section1 .input{
+    width: 50%;
+    height: 35px;
     display: flex;
-    align-items: center;
-    border: 2px solid white;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 60px;
+    background-color: rgba(99, 99, 99, 0.332);
+    gap: 5px;
 }
 
-.input input{
-    outline: none;
-    border: none;
-    border-radius: 20px;
+.section1 .input input{
     flex: 1;
-    font-size: larger;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
     color: white;
-    background-color:rgba(116, 87, 87, 0);
 }
 
-.input button{
-    height: 100%;
-    width: 40px;
-    border: none;
-    border-radius: 50%;
-    font-size: 30px;
-    background-color: rgba(137, 137, 137, 0.437);
+.section1 .input #search-btn{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: none;
     color: white;
+    border: none;
     cursor: pointer;
+    font-size: x-large;
+}
+
+.location{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.location #icon{
+    background-image: url(location.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    
 }
 
 .information {
@@ -65,18 +81,14 @@ body::-webkit-scrollbar{
     box-sizing: border-box;
 }
 
-.today-weather,.tenday-weather,.hourly-weather{
-    padding: 20px;
-    border-radius: 30px;
-    min-width: 300px;
-}
+
 
 .today-weather {
     background-color: rgba(54, 54, 54, 0.366);;
     display: grid;
     grid-template-rows: 1fr 1.5fr;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .information .today-weather .today-temperature{
@@ -123,8 +135,8 @@ body::-webkit-scrollbar{
     background-position: center;
 }
 
-.information .today-weather .today-details #max-temp #icon{
-    background-image: url(hot.png);
+.information .today-weather .today-details #wind-direction #icon{
+    background-image: url(direction.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -136,8 +148,8 @@ body::-webkit-scrollbar{
     background-repeat: no-repeat;
     background-position: center;
 }
-.information .today-weather .today-details #wind-direction #icon{
-    background-image: url(north.png);
+.information .today-weather .today-details #pressure #icon{
+    background-image: url(barometer.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,23 +172,25 @@ body::-webkit-scrollbar{
     font-size: 15px;
 }
 
-#humidity,#max-temp,#windspeed,#wind-direction,#visibility,.information .today-weather .today-details #date{
+#humidity,#wind-direction,#windspeed,#pressure,#visibility,.information .today-weather .today-details #date{
     display: grid;
     grid-template-rows: 1fr 1fr;
     text-align: center;
-    gap: 15px;
+    gap: 10px;
+    text-align: center;
 }
 
 
-.tenday-weather1{
+.tenday-weather1,.today-weather,.hourly-weather{
     background-color:rgba(145, 144, 146, 0.248);
     border-radius: 20px; 
+    padding: 20px;
+    min-width: 360px;
 }
 
 .tenday-weather1 #heading{
     margin: 0%;
-    padding-top: 20px;
-    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 .information .tenday-weather{
@@ -211,8 +225,6 @@ body::-webkit-scrollbar{
     background-position: center;
 }
 
-/* .information .tenday-weather .days .temp-symbol #s */
-
 
 @media screen and (max-width:850px) {
     .information{
@@ -223,7 +235,7 @@ body::-webkit-scrollbar{
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:560px) {
     .information .today-weather .today-details{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -237,13 +249,10 @@ body::-webkit-scrollbar{
         height: 80px;
         width: 80px;
     }
-    .tenday-weather1 #heading{
-        margin-left: 30px;
+    .section1 .input{
+        width: 80%;
     }
-    
 }
-
-
 
 .hourly-weather1{
     padding: 20px;

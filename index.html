@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="weather_app/image.png">
+    <link rel="icon" href="calendar.png">
 </head>
 <body>
 
     <section class="section1">
         <section class="input">
-            <input type="text" placeholder="Enter the location">
-            <button id="search-btn">⌕</button><br>
+            <input type="text" id="inplace" placeholder="Enter the location" required>
+            <button id="search-btn" onclick="weather()">⌕</button><br>
         </section>
         <p id="error-message">The city is not found</p>
+    </section>
+    <section class="location">
+        <div id="icon"><img src="" alt=""></div>
+        <div id="address">Manubolupadu, Dagadarthi, AP, India</div>
     </section>
     <section class="information">
         <div class="today-weather">
@@ -36,12 +40,6 @@
                     </div>
                     <div id="value">23 jun,2024</div>
 
-                </div>
-                <div class = "details" id="max-temp">
-                    <div id="icon">
-
-                    </div>
-                    <div id="value">42<sup>o</sup>C</div>
                 </div>
                 <div class = "details" id="humidity">
                     <div id="icon">
@@ -67,6 +65,12 @@
 
                     </div>
                     <div id="value">10km</div>
+                </div>
+                <div class = "details" id="pressure">
+                    <div id="icon">
+
+                    </div>
+                    <div id="value">0.01 mb</div>
                 </div>
                 
              </div>
