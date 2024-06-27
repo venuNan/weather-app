@@ -12,13 +12,13 @@
     <section class="section1">
         <section class="input">
             <input type="text" id="inplace" placeholder="Enter the location" required>
-            <button id="search-btn" onclick="weather()">⌕</button><br>
+            <button id="search-btn" onclick="user_function()">⌕</button><br>
         </section>
         <p id="error-message">The city is not found</p>
     </section>
     <section class="location">
         <div id="icon"><img src="" alt=""></div>
-        <div id="address">Manubolupadu, Dagadarthi, AP, India</div>
+        <div id="address"></div>
     </section>
     <section class="information">
         <div class="today-weather">
@@ -27,9 +27,9 @@
 
                 </div>
                 <div id="celcius">
-                    33 <sup>o</sup>C
+                    
                 </div>
-                <div id="desc">Cloudy skies throughout the day with late afternoon rain.</div>
+                <div id="desc"></div>
              </div>
              <div class="today-details">
                 <div class = "details" id="date">
@@ -75,136 +75,13 @@
         <div class="tenday-weather1">
             <p id="heading">10 Days forecast</p>
             <div class="tenday-weather">
-                <div class="days" id="day1">
-                    <div id="date">
-                        23, Jun 2024
-                    </div>
+                <!-- <div class="days" id="day0">
+                    <div id="date"></div>
                     <div class="temp-symbol">
-                        <div id="temp">
-                        37<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
+                        <div id="temp"></div>
+                        <div id="symbol"></div>
                     </div>
-                </div>
-                <div class="days" id="day2">
-                    <div id="date">
-                        24, Jun 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        40<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day3">
-                    <div id="date">
-                        25, Jun 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        42<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day4">
-                    <div id="date">
-                        26, Jun 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        29<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day5">
-                    <div id="date">
-                        27, Jun 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        30<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day6">
-                    <div id="date">
-                        28, Jun 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        28<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day7">
-                    <div id="date">
-                        29, Jun 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        35<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day8">
-                    <div id="date">
-                        30, Jun 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        37<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day9">
-                    <div id="date">
-                        01, Jul 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        38<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="days" id="day10">
-                    <div id="date">
-                        02, Jul 2024
-                    </div>
-                    <div class="temp-symbol">
-                        <div id="temp">
-                        33<sup>o</sup>C
-                        </div>
-                        <div id="symbol">
-    
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
             
@@ -213,150 +90,151 @@
         <section class="hourly-weather">
             <p id="heading">Daily Forecast</p>
             <div class="container">
-                <div class="hour">
+                <div class="hour" id="hour1">
                     <div id="image"></div>
                     <div id="time">
-                        12:00 AM
+                        00:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour2">
                     <div id="image"></div>
                     <div id="time">
                         01:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour3">
                     <div id="image"></div>
                     <div id="time">
                         02:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour4">
                     <div id="image"></div>
                     <div id="time">
                         03:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour5">
                     <div id="image"></div>
                     <div id="time">
                         04:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour6">
                     <div id="image"></div>
                     <div id="time">
                         05:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour7">
                     <div id="image"></div>
                     <div id="time">
                         06:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour8">
                     <div id="image"></div>
                     <div id="time">
                         07:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour9">
                     <div id="image"></div>
                     <div id="time">
                         08:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour10">
                     <div id="image"></div>
                     <div id="time">
                         09:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour11">
                     <div id="image"></div>
                     <div id="time">
                         10:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour12">
                     <div id="image"></div>
                     <div id="time">
                         11:00 AM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour13">
                     <div id="image"></div>
                     <div id="time">
                         12:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour14">
                     <div id="image"></div>
                     <div id="time">
                         01:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour15">
                     <div id="image"></div>
                     <div id="time">
                         02:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour16">
                     <div id="image"></div>
                     <div id="time">
                         03:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour17">
                     <div id="image"></div>
                     <div id="time">
                         04:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour18">
                     <div id="image"></div>
                     <div id="time">
                         05:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour19">
                     <div id="image"></div>
                     <div id="time">
                         06:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour20">
                     <div id="image"></div>
                     <div id="time">
                         07:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour21">
                     <div id="image"></div>
                     <div id="time">
                         08:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour22">
                     <div id="image"></div>
                     <div id="time">
                         09:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour23">
                     <div id="image"></div>
                     <div id="time">
                         10:00 PM
                     </div>
                 </div>
-                <div class="hour">
+                <div class="hour" id="hour24">
                     <div id="image"></div>
                     <div id="time">
                         11:00 PM
                     </div>
                 </div>
+                
             </div>
         </section>
         

@@ -204,7 +204,7 @@ body::-webkit-scrollbar{
     gap: 5px;
 }
 
-.information .tenday-weather .days{
+.information .tenday-weather .day{
     width: 100%;
     height: 40px;
     border-radius: 10px;
@@ -216,13 +216,13 @@ body::-webkit-scrollbar{
 }
 
 
-.information .tenday-weather .days .temp-symbol{
+.information .tenday-weather .day .temp-symbol{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 
-.information .tenday-weather .days .temp-symbol #symbol{
+.information .tenday-weather .day .temp-symbol #symbol{
     background-image: url(cloud.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -290,7 +290,7 @@ body::-webkit-scrollbar{
     padding: 10px;   
 }
 .container .hour #image{
-    background-image: url(cloud.png);
+    background-image: url(cloud-rain.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -303,7 +303,20 @@ body::-webkit-scrollbar{
 
 }
 .container::-webkit-scrollbar{
-    display: none;
+    height: 10px;
+}
+
+.container::-webkit-scrollbar-track{
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 2px slod black;
+    cursor: pointer;
 }
 
 .hourly-weather #heading{
