@@ -3,7 +3,7 @@ document.getElementById("inplace").addEventListener("input",function(){
 });
 
 function default_function(){
-    const place = "mangalam";
+    const place = "manubolupadu";
     weather(place);
 
 }
