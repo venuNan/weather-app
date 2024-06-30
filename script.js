@@ -49,8 +49,8 @@ async function weather(place) {
         else if(icon.includes("rain") && desc.includes("cloudy") && desc.includes("storm")){
             weathericon.style.backgroundImage = "url(cloud-rain-storm.png)";
         }
-        else if(icon.includes("cloudy") && desc.includes("storm")){
-            weathericon.style.backgroundImage = "url(cloud.storm.png)";
+        else if((icon.includes("cloudy") || desc.includes("cloudy")) && desc.includes("storm")){
+            weathericon.style.backgroundImage = "url(cloud-storm.png)";
         }
         else if(icon.includes("partly") && icon.includes("cloudy")){
             weathericon.style.backgroundImage = "url(partly-cloudy.png)";
