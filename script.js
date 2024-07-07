@@ -24,7 +24,6 @@ async function weather(place) {
 
     try {
 
-        console.log(place);
         const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?unitGroup=metric&include=days%2Chours&key=RC5YBMR5N93FWUMF338LY4YBV&contentType=json`;
         const response = await fetch(url);
 
