@@ -63,7 +63,7 @@ body::-webkit-scrollbar{
 }
 
 .location #icon{
-    background-image: url(location.png);
+    background-image: url(/static/images/location.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ body::-webkit-scrollbar{
 }
 
 .information .today-weather .today-temperature #icon{
-    background-image: url(sun.png);
+    background-image: url(/static/images/sun.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -133,40 +133,40 @@ body::-webkit-scrollbar{
 }
 
 .information .today-weather .today-details #humidity #icon{
-    background-image: url(humidity.png);
+    background-image: url(/static/images/humidity.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .information .today-weather .today-details #wind-direction #icon{
-    background-image: url(direction.png);
+    background-image: url(/static/images/direction.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .information .today-weather .today-details #windspeed #icon{
-    background-image: url(wind.png);
+    background-image: url(/static/images/wind.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 .information .today-weather .today-details #pressure #icon{
-    background-image: url(barometer.png);
+    background-image: url(/static/images/barometer.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 .information .today-weather .today-details #visibility #icon{
-    background-image: url(visibility.png);
+    background-image: url(/static/images/visibility.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .information .today-weather .today-details #date #icon{
-    background-image: url(calendar.png);
+    background-image: url(/static/images/calendar.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -223,7 +223,7 @@ body::-webkit-scrollbar{
 
 
 .information .tenday-weather .day .temp-symbol #symbol{
-    background-image: url(cloud.png);
+    background-image: url(/static/images/cloud.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -290,7 +290,7 @@ body::-webkit-scrollbar{
     padding: 10px;   
 }
 .container .hour #image{
-    background-image: url(cloud-rain.png);
+    background-image: url(/static/images/cloud-rain.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
