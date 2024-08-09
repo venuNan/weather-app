@@ -24,7 +24,6 @@ async function weather(place) {
 
     try {
 
-        console.log(place);
         const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?unitGroup=metric&include=days%2Chours&key=RC5YBMR5N93FWUMF338LY4YBV&contentType=json`;
         const response = await fetch(url);
 
@@ -157,7 +156,6 @@ async function weather(place) {
             const icon2 = data.days[0].hours[i].icon.toLowerCase();
             const desc2 = data.days[0].hours[i].conditions.toLowerCase();
             const datetime = data.days[0].hours[i].datetime.split(":")[0];
-            console.log(datetime)
             if(icon2.includes("clear") && ((datetime>=0 && datetime<=5) || (datetime>=17 && datetime<=23))){
                 document.querySelector(`.hourly-weather1 .hourly-weather .container #hour${i+1} #image`).style.backgroundImage = "url(night.png)";
             }
