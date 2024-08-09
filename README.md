@@ -16,6 +16,8 @@ This weather application allows users to check the weather details for a specifi
 - CSS
 - JavaScript
 - Visual Crossing Weather API
+- Flask
+- Python
 
 ## Getting Started
 
